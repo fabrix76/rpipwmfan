@@ -9,7 +9,7 @@ Here you are a really simple circuit to drive a fan, in order to cap rpm and obv
 I have decided to use Node-Red to control speed
 
 Here you are the schematics, pcb and the BOM
-![Alt text](/img/schema.png)![Alt text](/img/pbc.png)
+![Alt text](/img/schema.png) ![Alt text](/img/pbc.png)
 
 1 x 1KOhm resistor (R2)
 1 x 2N2222A NPN transistor (Q2)
