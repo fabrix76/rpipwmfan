@@ -12,21 +12,22 @@ I have decided to use Node-Red to control speed
 
 I get +5v and GND from raspberry GPIO, and i'm going to use GPIO21 (pin40) to control fan speed.
 
-###schematics and pcb
+### Schematics and pcb
 ![Alt text](/img/schematics.png)   ![Alt text](/img/pbc.png)
+
 Please pay attention for transistor connection:
 - emitter raspberry ground
 - base raspberry GPIO21
 - collector to fan ground 
 
-###Bill Of Material
+### Bill Of Material
 1 x 1KOhm resistor (R2)
 1 x 2N2222A NPN transistor (Q2)
 1 x diode
 1 x 3 pin connector (J2)
 1 x 2 pin connector (J1)
 
-###Board I/O connection
+### Board I/O connection
 J1 (Fan connector)
 Pin 1 fan +
 Pin 2 fan -
@@ -36,7 +37,8 @@ Pin 1 +5v
 Pin 2 gnd
 Pin 3 raspberry GPIO21 (pin40)
 
-Here you are my prototype circuit board
+### Prototype circuit board
+This is how it should look like. I'm sure yours will be better than mine :)
 
 ![Alt text](/img/IMG_20221026_140357.jpg)
 
