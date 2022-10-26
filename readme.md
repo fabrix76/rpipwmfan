@@ -21,11 +21,11 @@ Please pay attention for transistor connection:
 - collector to fan ground 
 
 ### Bill Of Material
-1 x 1KOhm resistor (R2)
-1 x 2N2222A NPN transistor (Q2)
-1 x diode
-1 x 3 pin connector (J2)
-1 x 2 pin connector (J1)
+- 1 x 1KOhm resistor (R2)
+- 1 x 2N2222A NPN transistor (Q2)
+- 1 x diode
+- 1 x 3 pin connector (J2)
+- 1 x 2 pin connector (J1)
 
 ### Board I/O connection
 J1 (Fan connector)
