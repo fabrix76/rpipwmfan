@@ -2,11 +2,11 @@
 ## Introduction
 
 ![Alt text](/img/1666790543910.jpg "Raspberry rack")
-I have a nice 4 raspberry rack, which help me to get a little bit of order in my study, but it introduce overheating on raspberies so them get throttled.
+I have a nice 4 bays raspberry rack, which helps me to get some sort of order on my workbench, but it cause overheating on raspberries and that make them throttling.
 
-Here you are a really simple circuit to drive a fan, in order to cap rpm and obviously the noise.
+Here you have a really simple circuit to drive a fan in order to cap RPMs and (obviously) the noise it makes.
 
-I have decided to use Node-Red to control speed
+I have choosen to use Node-Red to control speed
 
 ## Hardware setup
 
@@ -15,7 +15,7 @@ I get +5v and GND from raspberry GPIO, and i'm going to use GPIO21 (pin40) to co
 ### Schematics and pcb
 ![Alt text](/img/schematics.png)   ![Alt text](/img/pbc.png)
 
-Please pay attention for transistor connection:
+Please pay attention to the way the transistor is connected:
 - emitter raspberry ground
 - base raspberry GPIO21
 - collector to fan ground 
