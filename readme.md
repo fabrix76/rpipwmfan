@@ -33,5 +33,7 @@ Here you are my prototype circuit board
 in this photo there is also a second connector, used to power the fan's led ring.
 
 Now you can import in Node-Red the flow.json and varying frequency on GPIO you can increase or decrease fan rotation.
+
 ![Alt text](/img/nodered.png)
+
 If you like, you can command fan speed from console, without NR, setting PWM and frequency on GPIO21 o whatever you will use.
