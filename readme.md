@@ -8,15 +8,25 @@ Here you are a really simple circuit to drive a fan, in order to cap rpm and obv
 
 I have decided to use Node-Red to control speed
 
-Here you are the schematics, pcb and the BOM
-![Alt text](/img/schematics.png) ![Alt text](/img/pbc.png)
+## Hardware setup
 
+I get +5v and GND from raspberry GPIO, and i'm going to use GPIO21 (pin40) to control fan speed.
+
+###schematics and pcb
+![Alt text](/img/schematics.png)   ![Alt text](/img/pbc.png)
+Please pay attention for transistor connection:
+- emitter raspberry ground
+- base raspberry GPIO21
+- collector to fan ground 
+
+###Bill Of Material
 1 x 1KOhm resistor (R2)
 1 x 2N2222A NPN transistor (Q2)
 1 x diode
 1 x 3 pin connector (J2)
 1 x 2 pin connector (J1)
 
+###Board I/O connection
 J1 (Fan connector)
 Pin 1 fan +
 Pin 2 fan -
