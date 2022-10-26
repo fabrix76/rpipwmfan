@@ -12,7 +12,7 @@
         "type": "rpi-gpio out",
         "z": "16ae99d3e08ad4e4",
         "name": "",
-        "pin": "21",
+        "pin": "12",
         "set": "",
         "level": "0",
         "freq": "",

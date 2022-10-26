@@ -35,7 +35,7 @@ J1 (Fan connector)
 J2 (Raspberry connector)
 - Pin 1 +5v 
 - Pin 2 gnd
-- Pin 3 raspberry GPIO21 (pin40)
+- Pin 3 raspberry GPIO12 (pin32)
 
 ### Prototype circuit board
 This is how it should look like. I'm sure yours will be better than mine :)
@@ -51,12 +51,16 @@ Here a detail of connection on my cluster head raspberry
 
 In the four cable (purple, black, white and gray) are used for a SPI device, not of interest for this project.
 
-Now you can import in Node-Red the flow.json, it require rpi nodes, obviously and dashboard nodes, because you can set speed using a slider or some preset buttons.
+Now you can import in Node-Red the flow.json, containing application logic and dashboard to setup speed varying dutycycle.
+Required palette:
+- node-red-node-pi-gpio
+- node-red-dashboard
 
 Note: to change speed you need to change frequency on GPIO so varying frequency value on GPIO you can increase or decrease fan rotation. For value less than 20 (more or less) your fan doesn't rotate well, but it shoud tick sometime, it is normal.
 
 
 ![Alt text](/img/nodered.png "Node Red fan commands")
 
-If you like, you can command fan speed from console, without NR, setting PWM and frequency on GPIO21 o whatever you will use.
+
+If you like, you can command fan speed from console, without NR, setting PWM and frequency on GPIO12 o whatever you will use.
 Enjoy!
