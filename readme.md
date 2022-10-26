@@ -40,14 +40,14 @@ J2 (Raspberry connector)
 ### Prototype circuit board
 This is how it should look like. I'm sure yours will be better than mine :)
 
-![Alt text](/img/IMG_20221026_140357.jpg)
+![Alt text](/img/IMG_20221026_140357.jpg "Selfmade prototype board")
 
 in this photo there is also a second connector, used to power the fan's led ring.
 
 ### connect and go!
 Here a detail of connection on my cluster head raspberry
 
-![Alt text](/img/IMG_20221026_141100.jpg)
+![Alt text](/img/IMG_20221026_141100.jpg "Wiring")
 
 In the four cable (purple, black, white and gray) are used for a SPI device, not of interest for this project.
 
@@ -56,7 +56,7 @@ Now you can import in Node-Red the flow.json, it require rpi nodes, obviously an
 Note: to change speed you need to change frequency on GPIO so varying frequency value on GPIO you can increase or decrease fan rotation. For value less than 20 (more or less) your fan doesn't rotate well, but it shoud tick sometime, it is normal.
 
 
-![Alt text](/img/nodered.png)
+![Alt text](/img/nodered.png "Node Red fan commands")
 
 If you like, you can command fan speed from console, without NR, setting PWM and frequency on GPIO21 o whatever you will use.
 Enjoy!
