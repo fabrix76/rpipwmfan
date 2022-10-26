@@ -29,13 +29,13 @@ Please pay attention for transistor connection:
 
 ### Board I/O connection
 J1 (Fan connector)
-Pin 1 fan +
-Pin 2 fan -
+- Pin 1 fan +
+- Pin 2 fan -
 
 J2 (Raspberry connector)
-Pin 1 +5v 
-Pin 2 gnd
-Pin 3 raspberry GPIO21 (pin40)
+- Pin 1 +5v 
+- Pin 2 gnd
+- Pin 3 raspberry GPIO21 (pin40)
 
 ### Prototype circuit board
 This is how it should look like. I'm sure yours will be better than mine :)
