@@ -1,0 +1,183 @@
+[
+    {
+        "id": "16ae99d3e08ad4e4",
+        "type": "tab",
+        "label": "Fan control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "358f097f203e90f6",
+        "type": "rpi-gpio out",
+        "z": "16ae99d3e08ad4e4",
+        "name": "",
+        "pin": "21",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "pwm",
+        "bcm": true,
+        "x": 460,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "43aff53d8907b84e",
+        "type": "ui_slider",
+        "z": "16ae99d3e08ad4e4",
+        "name": "",
+        "label": "Speed",
+        "tooltip": "",
+        "group": "a9a27f3e2d59b91d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "0",
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 290,
+        "y": 320,
+        "wires": [
+            [
+                "358f097f203e90f6",
+                "7248d4015844f026"
+            ]
+        ]
+    },
+    {
+        "id": "7248d4015844f026",
+        "type": "ui_gauge",
+        "z": "16ae99d3e08ad4e4",
+        "name": "",
+        "group": "a9a27f3e2d59b91d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Fan speed",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#0e00b5",
+            "#00a7e6",
+            "#02e6ff"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 470,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "0d168a18bc6c08e2",
+        "type": "ui_button",
+        "z": "16ae99d3e08ad4e4",
+        "name": "",
+        "group": "a9a27f3e2d59b91d",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "43aff53d8907b84e"
+            ]
+        ]
+    },
+    {
+        "id": "3784c883b127436a",
+        "type": "ui_button",
+        "z": "16ae99d3e08ad4e4",
+        "name": "",
+        "group": "a9a27f3e2d59b91d",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "35",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "35",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "43aff53d8907b84e"
+            ]
+        ]
+    },
+    {
+        "id": "fa4c13f77b795ca0",
+        "type": "ui_button",
+        "z": "16ae99d3e08ad4e4",
+        "name": "",
+        "group": "a9a27f3e2d59b91d",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "Full",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "100",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "43aff53d8907b84e"
+            ]
+        ]
+    },
+    {
+        "id": "a9a27f3e2d59b91d",
+        "type": "ui_group",
+        "name": "Fan",
+        "tab": "11de3b62fe5642f6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "11de3b62fe5642f6",
+        "type": "ui_tab",
+        "name": "RPI cluster",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
